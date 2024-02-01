@@ -1,6 +1,15 @@
-﻿namespace ManagementSystem.Controllers
+﻿using Microsoft.AspNetCore.Mvc;
+
+namespace ManagementSystem.Controllers
 {
-    public class OrganizationsController
+
+    [ApiController]
+    [Route("[controller]/[action]")]
+    public class OrganizationsController : ControllerBase
     {
+        public Task<int> GetTask(int id)
+        {
+            return Task.FromResult(0);
+        }
     }
 }
